@@ -1,7 +1,7 @@
 #!/bin/bash
 
-ECAT_IFACE=enp86s0
-EXCHANGE_IFACE=enx000ec602a165
+ECAT_IFACE=enp113s0
+EXCHANGE_IFACE=enx9c69d33eeac4
 
 echo "Starting auto_set_metric.sh!"
 

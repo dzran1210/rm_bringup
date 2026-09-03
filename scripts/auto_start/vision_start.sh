@@ -8,4 +8,7 @@ if [[ $HAS_SWITCH == has ]]; then
 else
   export ROS_IP=127.0.0.1
 fi
-mon launch --disable-ui --log=/tmp/vision.log rm_bringup vision_start.launch
+mkdir /home/dynamicx/Documents/vision_logs/$(date +%Y%m%d)
+mon launch --disable-ui --log=/home/dynamicx/Documents/vision_logs/$(date +%Y%m%d)/$(date +%Y%m%d_%H%M%S).log rm_bringup vision_start.launch
+
+

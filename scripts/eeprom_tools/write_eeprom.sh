@@ -1,9 +1,9 @@
 #!/bin/bash
 
 export ToolPath="/home/dynamicx/rm_ws/src/rm_bringup/scripts/eeprom_tools"
-export EthName="enp49s0"
-export SlaveAddress=1
-export EEpromType="MIT"  # use DBUS for rm/dbus slaves, or use MIT for mit slaves
+export EthName="enp113s0"
+export SlaveAddress=2
+export EEpromType="DBUS"  # use DBUS for rm/dbus slaves, or use MIT for mit slaves
 
 sudo su -c "
     export ToolPath=\"$ToolPath\"

@@ -1,7 +1,8 @@
 <launch>
-   <include file="$(find rm_config)/launch/vision/camera.launch">
-        <arg name="imu_trigger" value="false"/>
-    </include>
+    <include file="$(find hk_camera)/launch/single_device.launch"/>
+    <include file="$(find superpower_track)/launch/superpower_track_vision.launch"/>
 
-    <include file="$(find rm_config)/launch/vision/vision_loader.launch"/>
+    <include file="$(find windmill)/launch/windmill.launch"/>
+    <include file="$(find rm_forecast)/launch/forecast.launch"/>
+
 </launch>
